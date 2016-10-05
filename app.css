@@ -1,0 +1,118 @@
+.spinner
+{
+    width:50px;
+    height: 50px; 
+    margin-top: -25px; 
+    margin-left: -25px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 2px 10px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.spinner > p 
+{
+    color: #38d638;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.spinner svg rect
+{
+    animation:SpinnerSegmentFade 0.99s linear infinite;
+    -webkit-animation: SpinnerSegmentFade 0.99s linear infinite;
+}
+
+.spinner svg rect.segment1
+{
+    animation-delay:0s;
+    -webkit-animation-delay:0s;
+}
+.spinner svg rect.segment2
+{
+    animation-delay:-0.09s;
+    -webkit-animation-delay:-0.09s;
+}
+.spinner svg rect.segment3
+{
+    animation-delay:-0.18s;
+    -webkit-animation-delay:-0.18s;
+}
+.spinner svg rect.segment4
+{
+    animation-delay:-0.27s;
+    -webkit-animation-delay:-0.27s;
+}
+.spinner svg rect.segment5
+{
+    animation-delay:-0.36s;
+    -webkit-animation-delay:-0.36s;
+}
+.spinner svg rect.segment6
+{
+    animation-delay:-0.45s;
+    -webkit-animation-delay:-0.45s;
+}
+.spinner svg rect.segment7
+{
+    animation-delay:-0.54s;
+    -webkit-animation-delay:-0.54s;
+}
+.spinner svg rect.segment8
+{
+    animation-delay:-0.63s;
+    -webkit-animation-delay:-0.63s;
+}
+.spinner svg rect.segment9
+{
+    animation-delay:-0.72s;
+    -webkit-animation-delay:-0.72s;
+}
+.spinner svg rect.segment10
+{
+    animation-delay:-0.81s;
+    -webkit-animation-delay:-0.81s;
+}
+.spinner svg rect.segment11
+{
+    animation-delay:-0.9s;
+    -webkit-animation-delay:-0.9s;
+}
+.spinner svg rect.segment12
+{
+    animation-delay:-0.99s;
+    -webkit-animation-delay:-0.99s;
+}
+
+@keyframes SpinnerSegmentFade
+{
+    from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0.1;
+    }
+}
+@-webkit-keyframes SpinnerSegmentFade
+{
+    from
+    {
+        opacity: 1;
+    }
+    to
+    {
+        opacity: 0.1;
+    }
+}
+
+/* bootstrap override css for header */
+.actives
+{
+    border-bottom: 2px solid #393965;
+    color: #000;
+}
