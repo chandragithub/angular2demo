@@ -9,7 +9,9 @@ import { HttpModule }    from '@angular/http';
 import { InMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
 
-import { AppComponent } from './components/header/header';
+import { AppMain } from './components/main/main';
+import { AppHeader } from './components/header/header';
+import { AppFooter } from './components/footer/footer';
 
 @NgModule({
   imports: [
@@ -19,11 +21,13 @@ import { AppComponent } from './components/header/header';
     InMemoryWebApiModule.forRoot(InMemoryDataService)
   ],
   declarations: [
-    AppComponent
+    AppMain,
+    AppHeader,
+    AppFooter
   ],
   providers: [
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppMain ]
 })
 export class AppModule {
 }

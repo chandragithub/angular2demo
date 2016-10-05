@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'application',
-  templateUrl: 'application/components/header/partials/views.html',
+  selector: 'appHeader',
+  templateUrl: 'application/components/header/partials/view.html',
   styleUrls: ['application/components/header/header.css']
 })
-export class AppComponent {
-  title = 'Angular2 Demo App';
+export class AppHeader {
+  title = 'FGS Demo';
 }
