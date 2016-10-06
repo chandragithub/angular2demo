@@ -9,17 +9,21 @@ import { HttpModule }    from '@angular/http';
 import { AppMain } from './components/main/main';
 import { AppHeader } from './components/header/header';
 import { AppFooter } from './components/footer/footer';
+import { AppDashboard } from './components/dashboard/dashboard';
+import { routing } from './routing/routing';
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   declarations: [
     AppMain,
     AppHeader,
-    AppFooter
+    AppFooter,
+    AppDashboard
   ],
   providers: [
   ],
